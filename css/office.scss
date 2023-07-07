@@ -1,0 +1,56 @@
+// helper folder
+@import 'sass/helper/variables';
+@import 'sass/helper/mixin';
+
+// components folder
+@import 'sass/component/pre-loader';
+@import 'sass/component/brands-icons';
+@import 'sass/component/button-up-down';
+@import 'sass/component/scroller-top-page';
+@import 'sass/component/main-hr';
+@import 'sass/component/main-head';
+
+// pages folder
+@import 'sass/pages/landing';
+@import 'sass/pages/about';
+@import 'sass/pages/services';
+@import 'sass/pages/why-us';
+@import 'sass/pages/questions';
+@import 'sass/pages/accounter';
+
+// layout folder
+@import 'sass/layout/header';
+@import 'sass/layout/footer';
+
+body{
+    direction: rtl;
+    transition: all .5s linear !important;
+}
+
+@media (min-width: 1200px){
+    .container {
+        max-width: 1170px !important;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    .container {
+        max-width: 960px !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .container {
+        max-width: 720px !important;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px){
+    .container {
+        max-width: 540px !important;
+    }
+}
+
+ul{
+    @include reset-ul;
+}
+a{
+    @include reset-a-link;
+}

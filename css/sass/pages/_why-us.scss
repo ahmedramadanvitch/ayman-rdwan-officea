@@ -1,0 +1,26 @@
+.why-us{
+    .container{
+        .why-us-boxes{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));  /* مهم مهم مهم  */
+            gap: 30px;
+            @include smallestMobileScreen{
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));  /* مهم مهم مهم  */
+                gap: 20px;
+            }
+            @include mobileScreen{
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));  /* مهم مهم مهم  */
+                gap: 20px;
+            }
+            h5{
+                color: var(--main-color);
+            }
+            p{
+                color: var(--text-color);
+            }
+        }
+    }
+}
+

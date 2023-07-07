@@ -1,0 +1,33 @@
+.navbar{
+    background-color: #f6f6f6;
+    .navbar-toggler:focus{
+        color: var(--main-color) !important;
+    }
+    .navbar-collapse{
+        align-items: center !important;
+        justify-content: center !important;
+        .navbar-nav{
+            @include MediumScreen{
+                right: 25px;
+            }
+            @include largeScreen{
+                right: 25px;
+            }
+        }
+        .nav-item{
+            .nav-link{
+                margin-top: 10px;
+                @include mobileScreen{
+                    margin-right: 20px;
+                };
+                &:hover{
+                    color: var(--main-color) !important;
+                }
+            }
+            .active{
+                color: var(--main-color) !important;
+                font-weight: 500;
+            }
+        }
+    }
+}

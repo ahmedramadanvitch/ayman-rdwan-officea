@@ -1,0 +1,23 @@
+.services {
+  .container {
+    .services-boxes{
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));  /* مهم مهم مهم  */
+      gap: 30px;
+      @include mobileScreen{
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));  /* مهم مهم مهم  */
+          gap: 20px;
+      }
+
+      > div{
+        p{
+          font-size: 25px;
+          font-weight: 400;
+          color: var(--main-color);
+          text-align: center;
+        }
+      }
+    }
+  }
+}

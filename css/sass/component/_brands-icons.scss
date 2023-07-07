@@ -1,0 +1,16 @@
+/* start nav face-whats-Dark-mood */
+.navigation {
+	position: fixed;
+	z-index: 10000;
+	bottom: 0px;
+	background-color: #00000033;
+	width: 100%;
+	height: fit-content;
+	padding: 10px;
+	transition-timing-function: all .3s ease !important;
+	i {
+		font-size: 40px;
+		transition: .3s ease !important;
+	}
+}
+/* end nav-brand face-whats-Dark-mood */

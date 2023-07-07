@@ -1,0 +1,28 @@
+/* start footer */
+footer{
+    background-color: #19283f;
+    position: relative !important;
+    z-index: 100 !important;
+    @include smallScreen{
+        position: relative !important;
+        top: 118px !important;
+    }
+    @include mobileScreen{
+        position: relative !important;
+        top: 100px !important;
+    }
+
+    hr{
+        background-color: aliceblue !important;
+        width: 100% !important;
+        height: 4px !important;
+    }
+    .created{
+        &:hover{
+            i{
+                color: var(--main-color) !important;
+            }
+        }
+    }
+}
+/* End footer */

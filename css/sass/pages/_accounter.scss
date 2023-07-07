@@ -1,0 +1,63 @@
+.accounter{
+    .main-h2{
+        color: var(--text-color) !important;         
+    }
+    .card-box{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+        gap: 30px;
+        .card{
+            border-radius: 25px !important;
+            background-color: rgb(255, 255, 255);
+            .image-content,
+            .card-content{
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              padding: 10px 14px;
+            }
+            .image-content{
+              position: relative;
+              row-gap: 5px;
+              padding: 25px 0 10px;
+              .overlay{
+                position: absolute;
+                left: 0;
+                top: 0;
+                height: 70%;
+                width: 100%;
+                background-color: var(--main-color);
+                border-radius: 25px 25px 0 0;
+              }
+              .card-image{
+                position: relative;
+                height: 150px;
+                width: 150px;
+                border-radius: 50%;
+                background: var(--main-color);
+                padding: 3px;
+                .card-img{
+                  height: 100%;
+                  width: 100%;
+                  object-fit: cover;
+                  border-radius: 50%;
+                  border: 4px solid white;
+                }
+              }
+            }
+            .card-content{
+              .name{
+                font-size: 25px;
+                font-weight: 700;
+                color: var(--main-color);
+              }
+              .description{
+                font-size: 19px;
+                color: var(--text-color);
+                text-align: center;
+                margin-bottom: 0px !important;
+              }
+            }
+        }
+    }
+}
